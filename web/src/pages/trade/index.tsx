@@ -7,7 +7,7 @@ import BuySell from "./components/BuySell";
 
 const Trade: React.FC = () => {
 	return (
-		<div className="trade min-h-screen">
+		<div className="trade">
 			<Overview />
 			<TreeView />
 			<Orderbook />

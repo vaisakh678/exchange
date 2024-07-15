@@ -2,7 +2,7 @@ import React from "react";
 
 const Overview: React.FC = () => {
 	return (
-		<div className="overview h-[60px] w-full border-y border-[#202126] flex items-center px-4 space-x-8 text-[#969faf]">
+		<div className="overview h-[60px] w-full border-y border-[#202126] flex items-center px-4 space-x-8 text-[#969faf] overflow-x-auto text-nowrap">
 			<h1 className="text-[#f4f4f6] font-medium text-base">SOL/USDT</h1>
 			<div>
 				<p className="text-[#00c278] text-xl">150.38</p>
