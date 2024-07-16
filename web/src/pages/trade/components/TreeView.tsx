@@ -49,8 +49,11 @@ const TreeView: React.FC = () => {
 
 		chart.timeScale().fitContent();
 	}, []);
+
+	return null;
+
 	return (
-		<div className="tree-view">
+		<div className="tree-view flex flex-col">
 			<div className="p-3 flex justify-between items-center">
 				<span className="text-ex-gray">Chart</span>
 				<div>
@@ -62,7 +65,7 @@ const TreeView: React.FC = () => {
 					</TabButton>
 				</div>
 			</div>
-			<div className="w-full h-full" ref={chartRef}></div>
+			<div className="w-full h-full" ref={chartRef} />
 		</div>
 	);
 };

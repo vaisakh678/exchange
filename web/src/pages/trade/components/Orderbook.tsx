@@ -66,7 +66,7 @@ const OrderbookList = () => {
 
 					<li className="flex justify-between p-3 py-1">
 						<p className="text-[#fd4b4e] text-lg">152.65</p>
-						<button className="text-sm text-blue-500 hover:text-blue-600" onClick={() => centerList()}>
+						<button className="text-sm hidden lg:visible text-blue-500 hover:text-blue-600" onClick={() => centerList()}>
 							Recenter
 						</button>
 					</li>

@@ -4,7 +4,7 @@ import SearchIcon from "../assets/icons/search.svg";
 
 const Appbar: React.FC = () => {
 	return (
-		<div className="w-full px-4 bg-[#0e0f14] text-[#969faf] flex h-14 items-center sticky top-0">
+		<div className="w-full px-4 bg-[#0e0f14] text-[#969faf] flex h-14 items-center sticky top-0 z-50">
 			<div className="space-x-10 flex items-center mr-auto">
 				<Link to="/">
 					<h1 className="text-white font-bold text-xl">Exchange</h1>
@@ -20,16 +20,16 @@ const Appbar: React.FC = () => {
 					<input type="text" placeholder="Search markets" className="bg-inherit  pl-2 py-1 outline-none" />
 				</div>
 			</div>
-			<div>
+			<div className="flex">
 				<Link
 					to="signup"
-					className="my-auto text-nowrap rounded-lg bg-[#142d25] px-3 py-1.5 text-sm font-semibold text-[#00c278] hover:opacity-90"
+					className="my-auto mx-3 text-nowrap rounded-lg bg-[#142d25] px-3 py-1.5 flex items-center justify-center text-sm font-semibold text-[#00c278] hover:opacity-90"
 				>
 					Sign up
 				</Link>
 				<Link
 					to="signin"
-					className="my-auto ml-10 text-nowrap rounded-lg bg-[#18253b] px-3 py-1.5 text-sm font-semibold text-[#4c94ff] hover:opacity-90"
+					className="my-auto mx-3 mr-0 text-nowrap rounded-lg bg-[#18253b] px-3 py-1.5 flex items-center justify-center text-sm font-semibold text-[#4c94ff] hover:opacity-90"
 				>
 					Sign in
 				</Link>
