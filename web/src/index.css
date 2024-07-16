@@ -6,4 +6,7 @@ html {
 	background-color: #0e0f14;
 	color: #f4f4f6;
 }
+input[type="checkbox"]:checked::before {
+	content: "\2713";
+}
 

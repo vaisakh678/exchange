@@ -6,7 +6,9 @@ const Appbar: React.FC = () => {
 	return (
 		<div className="w-full px-4 bg-[#0e0f14] text-[#969faf] flex h-14 items-center sticky top-0">
 			<div className="space-x-10 flex items-center mr-auto">
-				<h1 className="text-white font-bold text-xl">Exchange</h1>
+				<Link to="/">
+					<h1 className="text-white font-bold text-xl">Exchange</h1>
+				</Link>
 				<NavLink to="/">
 					{({ isActive }) => <span className={`hidden  sm:flex ${isActive ? "text-[#f4f4f6]" : "bg-inherit"}`}>Markets</span>}
 				</NavLink>
